@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marwan Mohamed | Data Engineer</title>
+  <meta name="description" content="Marwan Mohamed — Data Engineer specializing in ETL pipelines, streaming data systems, and AI-powered solutions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="certs.css" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Marwan<span>.</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home"     class="nav-link">Home</a></li>
+        <li><a href="#about"    class="nav-link">About</a></li>
+        <li><a href="#skills"   class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#contact"  class="nav-link">Contact</a></li>
+        <li><a href="#contact"  class="nav-cta">Hire Me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-title">
+        Building the<br/>
+        <span class="gradient-text">Data Pipelines</span><br/>
+        of Tomorrow
+      </h1>
+      <p class="hero-subtitle">
+        I'm <strong>Marwan Mohamed</strong>, a Data Engineer crafting ETL pipelines &amp;
+        streaming systems. Passionate about building intelligent, data-driven solutions that scale.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#about"    class="btn btn-ghost">My Story →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Projects</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Companies</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Technologies</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="ai-visual">
+        <div class="ai-glow"></div>
+        <svg class="data-pipeline-visual" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+          <!-- Flow Paths -->
+          <path class="flow-path p1" d="M50 200 L150 200 Q200 200 200 150 L200 100 L300 100" fill="none" stroke="var(--border)" stroke-width="3" />
+          <path class="flow-path p2" d="M50 200 L150 200 Q200 200 200 250 L200 300 L300 300" fill="none" stroke="var(--border)" stroke-width="3" />
+          <path class="flow-path p3" d="M300 100 L400 100 Q450 100 450 200" fill="none" stroke="var(--border)" stroke-width="3" />
+          <path class="flow-path p4" d="M300 300 L400 300 Q450 300 450 200" fill="none" stroke="var(--border)" stroke-width="3" />
+          
+          <defs>
+            <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="3" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+            
+            <path id="pathTop" d="M50 200 L150 200 Q200 200 200 150 L200 100 L300 100 L400 100 Q450 100 450 200" />
+            <path id="pathBottom" d="M50 200 L150 200 Q200 200 200 250 L200 300 L300 300 L400 300 Q450 300 450 200" />
+          </defs>
+
+          <!-- Moving Data Pulses -->
+          <circle r="6" fill="var(--teal)" filter="url(#glow)" opacity="0">
+            <animateMotion dur="4s" repeatCount="indefinite" path="M50 200 L150 200 Q200 200 200 150 L200 100 L300 100 L400 100 Q450 100 450 200" />
+            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="4s" repeatCount="indefinite" />
+          </circle>
+          
+          <circle r="6" fill="var(--indigo)" filter="url(#glow)" opacity="0">
+            <animateMotion dur="4s" repeatCount="indefinite" begin="2s" path="M50 200 L150 200 Q200 200 200 250 L200 300 L300 300 L400 300 Q450 300 450 200" />
+            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="4s" repeatCount="indefinite" begin="2s" />
+          </circle>          
+          <!-- Icons / Nodes -->
+          <g class="pipe-node">
+            <rect x="20" y="170" width="60" height="60" rx="8" fill="var(--bg-alt)" stroke="var(--teal)" stroke-width="2" />
+            <text x="50" y="205" text-anchor="middle" font-size="20">💾</text>
+            <text x="50" y="245" text-anchor="middle" font-size="10" fill="var(--muted)">SOURCE</text>
+          </g>
+          
+          <g class="pipe-node">
+            <circle cx="300" cy="100" r="35" fill="var(--bg-alt)" stroke="var(--indigo)" stroke-width="2" />
+            <text x="300" y="108" text-anchor="middle" font-size="20">⚙️</text>
+            <text x="300" y="150" text-anchor="middle" font-size="10" fill="var(--muted)">TRANSFORM</text>
+          </g>
+
+          <g class="pipe-node">
+            <circle cx="300" cy="300" r="35" fill="var(--bg-alt)" stroke="var(--indigo)" stroke-width="2" />
+            <text x="300" y="308" text-anchor="middle" font-size="20">⚡</text>
+            <text x="300" y="350" text-anchor="middle" font-size="10" fill="var(--muted)">STREAM</text>
+          </g>
+          
+          <g class="pipe-node">
+            <rect x="420" y="170" width="60" height="60" rx="8" fill="var(--bg-alt)" stroke="var(--green)" stroke-width="2" />
+            <text x="450" y="205" text-anchor="middle" font-size="20">📊</text>
+            <text x="450" y="245" text-anchor="middle" font-size="10" fill="var(--muted)">INSIGHT</text>
+          </g>
+        </svg>
+        <div class="ai-stats-card">
+          <div class="ai-stat-line"><span>Pipeline Load</span> <div class="ai-bar"><div class="ai-fill" style="width: 82%"></div></div></div>
+          <div class="ai-stat-line"><span>Sync Status</span> <span class="ai-val">Healthy</span></div>
+          <div class="ai-stat-line"><span>Throughput</span> <span class="ai-val">2.4k</span></div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down"></a>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Passionate about turning <span class="gradient-text">raw data</span> into insight</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-wrap">
+          <div class="avatar-ring">
+            <div class="avatar-inner">
+              <img src="profile.png" alt="Marwan Mohamed" class="profile-img">
+            </div>
+          </div>
+          <div class="about-badges">
+            <div class="badge-chip"><span>⚡</span> Data Engineer</div>
+
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="about-lead">
+            Hands-on Data Engineer building <strong>ETL pipelines</strong> and <strong>streaming data systems</strong> for real-world applications.
+          </p>
+          <p>
+            A results-driven Data Engineer with hands-on experience designing, building, and optimizing data pipelines at scale. I specialize in turning raw, unstructured data into clean, reliable, and actionable insights for real-world impact.
+          </p>
+          <p>
+            From designing database schemas at QEEMA to building semantic search systems with vector databases at DEPI, I bring a full-stack data mindset — from ingestion to insight.
+          </p>
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-icon">📍</span>
+              <div>
+                <span class="info-label">Location</span>
+                <span class="info-val">Egypt</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">📞</span>
+              <div>
+                <span class="info-label">Phone</span>
+                <span class="info-val">+20 102 680 9007</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">💼</span>
+              <div>
+                <span class="info-label">Status</span>
+                <span class="info-val available">Open to Work</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">📧</span>
+              <div>
+                <span class="info-label">Email</span>
+                <span class="info-val"><a href="mailto:maradodec@gmail.com" style="color: inherit; text-decoration: none;">maradodec@gmail.com</a></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="languages-section">
+            <h4 class="lang-title">Languages</h4>
+            <div class="lang-item">
+              <div class="lang-info"><span>Arabic</span> <span>Native</span></div>
+              <div class="lang-bar"><div class="lang-fill" style="width: 100%"></div></div>
+            </div>
+            <div class="lang-item">
+              <div class="lang-info"><span>English</span> <span>Good</span></div>
+              <div class="lang-bar"><div class="lang-fill" style="width: 60%"></div></div>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary" style="margin-top: 2rem;">Let's Connect</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills" class="skills section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technical Expertise</span>
+        <h2 class="section-title">My <span class="gradient-text">Skill Set</span></h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card" data-delay="0">
+          <div class="skill-icon">🐍</div>
+          <h3>Programming</h3>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">OOP</span>
+            <span class="tag">DSA</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-delay="100">
+          <div class="skill-icon">⚙️</div>
+          <h3>Data Engineering</h3>
+          <div class="skill-tags">
+            <span class="tag">ETL Pipelines</span>
+            <span class="tag">Apache Kafka</span>
+            <span class="tag">Apache Spark</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Data Modeling</span>
+            <span class="tag">IBM DataStage</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-delay="200">
+          <div class="skill-icon">🤖</div>
+          <h3>AI / Machine Learning</h3>
+          <div class="skill-tags">
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">Random Forest</span>
+            <span class="tag">XGBoost</span>
+            <span class="tag">SMOTE</span>
+            <span class="tag">Seaborn</span>
+            <span class="tag">Matplotlib</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-delay="300">
+          <div class="skill-icon">🛠️</div>
+          <h3>Tools &amp; Frameworks</h3>
+          <div class="skill-tags">
+            <span class="tag">Streamlit</span>
+            <span class="tag">Git</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Jupyter</span>
+            <span class="tag">Weaviate</span>
+            <span class="tag">RESTful APIs</span>
+            <span class="tag">GridSearchCV</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ── -->
+  <section id="experience" class="experience section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Experience</span>
+        <h2 class="section-title">My <span class="gradient-text">Journey</span></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="tl-company">QEEMA</span>
+              <span class="tl-period">Full-time</span>
+            </div>
+            <h3 class="tl-role">Data Engineer</h3>
+            <ul class="tl-bullets">
+              <li>Built and maintained data pipelines using <strong>Apache Kafka</strong> and <strong>Apache NiFi</strong></li>
+              <li>Designed database schemas and optimized SQL queries for analytics use cases</li>
+              <li>Integrated <strong>Weaviate (Vector Database)</strong> for semantic search and context-aware chatbot responses</li>
+              <li>Contributed to developing an AI-powered chatbot for campus events</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="tag sm">Kafka</span>
+              <span class="tag sm">NiFi</span>
+              <span class="tag sm">PostgreSQL</span>
+              <span class="tag sm">Weaviate</span>
+              <span class="tag sm">ETL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="tl-company">DEPI (Digital Egypt Pioneers Initiative)</span>
+              <span class="tl-period">Oct 2024 — Present</span>
+            </div>
+            <h3 class="tl-role">Data Engineer</h3>
+            <ul class="tl-bullets">
+              <li>Building scalable data architectures and optimized ETL pipelines at DEPI.</li>
+              <li>Collaborating on real-world data engineering projects involving Python, SQL, and database management.</li>
+              <li>Mastering advanced data modeling and cloud-native data solutions.</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="tag sm">Data Engineering</span>
+              <span class="tag sm">ETL</span>
+              <span class="tag sm">Python</span>
+              <span class="tag sm">SQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="tl-company">National Telecommunication Institute (NTI)</span>
+              <span class="tl-period">Experience</span>
+            </div>
+            <h3 class="tl-role">Data Science Intern</h3>
+            <ul class="tl-bullets">
+              <li>Completed intensive training in Data Science fundamentals using <strong>Python</strong></li>
+              <li>Applied <strong>Statistics</strong> and <strong>Exploratory Data Analysis (EDA)</strong> on real datasets</li>
+              <li>Built and evaluated Machine Learning models for prediction and classification</li>
+              <li>Gained hands-on experience with Data Visualization and model evaluation</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="tag sm">Data Science</span>
+              <span class="tag sm">Statistics</span>
+              <span class="tag sm">EDA</span>
+              <span class="tag sm">ML Evaluation</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ── -->
+  <section id="education" class="education section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Academic</span>
+        <h2 class="section-title">Educational <span class="gradient-text">Background</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="tl-company">Zagazig National University</span>
+              <span class="tl-period">2024 — 2028</span>
+            </div>
+            <h3 class="tl-role">Bachelor of Science in Computer Science &amp; AI</h3>
+            <p class="tl-desc">Focusing on artificial intelligence, data structures, and software engineering at the National University of Zagazig.</p>
+            <div class="tl-tags">
+              <span class="tag sm">Computer Science</span>
+              <span class="tag sm">Artificial Intelligence</span>
+              <span class="tag sm">Data Structures</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="projects section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <img src="ai-campus.png" alt="AI Campus Events Management System">
+          </div>
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">🤖</div>
+            <span class="project-badge">AI System</span>
+          </div>
+          <h3 class="project-title">AI Campus Events Management System</h3>
+          <p class="project-desc">
+            Full-stack AI platform with a Streamlit frontend and RESTful backend API. Enables semantic search and context-aware chatbot responses for campus events using a Vector Database.
+          </p>
+          <div class="project-tech">
+            <span class="tag sm">Python</span>
+            <span class="tag sm">Streamlit</span>
+            <span class="tag sm">Weaviate</span>
+            <span class="tag sm">REST API</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <img src="health-prediction.png" alt="Health Status Prediction">
+          </div>
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">🏥</div>
+            <span class="project-badge">ML</span>
+          </div>
+          <h3 class="project-title">Health Status Prediction</h3>
+          <p class="project-desc">
+            Machine learning model predicting health status (Healthy/Diseased) with advanced feature engineering, SMOTE for class imbalance, and ensemble classifiers.
+          </p>
+          <div class="project-tech">
+            <span class="tag sm">Python</span>
+            <span class="tag sm">Random Forest</span>
+            <span class="tag sm">XGBoost</span>
+            <span class="tag sm">SMOTE</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <img src="data-cleaning.png" alt="Data Processing Automation">
+          </div>
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">🔄</div>
+            <span class="project-badge">Data Engineering</span>
+          </div>
+          <h3 class="project-title">Data Processing Automation</h3>
+          <p class="project-desc">
+            Automated pipeline for cleaning and transforming raw, unstructured datasets into organized, analytics-ready data using Pandas and NumPy.
+          </p>
+          <div class="project-tech">
+            <span class="tag sm">Python</span>
+            <span class="tag sm">Pandas</span>
+            <span class="tag sm">NumPy</span>
+            <span class="tag sm">ETL</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <img src="quran-player.png" alt="Audio Quran Player">
+          </div>
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">🎵</div>
+            <span class="project-badge">Desktop App</span>
+          </div>
+          <h3 class="project-title">Audio Quran Player</h3>
+          <p class="project-desc">
+            A complete, feature-rich audio player application built using C++ and the Qt Framework with a polished, user-friendly graphical interface.
+          </p>
+          <div class="project-tech">
+            <span class="tag sm">C++</span>
+            <span class="tag sm">Qt Framework</span>
+            <span class="tag sm">GUI</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CERTIFICATIONS ── -->
+  <section id="certifications" class="certs section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Achievements</span>
+        <h2 class="section-title">Official <span class="gradient-text">Certifications</span></h2>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card" data-delay="0">
+          <div class="cert-icon">🎓</div>
+          <div>
+            <div class="cert-name">Data Engineer</div>
+            <div class="cert-issuer">DEPI — Digital Egypt Pioneers Initiative</div>
+          </div>
+        </div>
+        <div class="cert-card" data-delay="100">
+          <div class="cert-icon">📊</div>
+          <div>
+            <div class="cert-name">Data Science Intern</div>
+            <div class="cert-issuer">National Telecommunication Institute (NTI)</div>
+          </div>
+        </div>
+        <div class="cert-card" data-delay="200">
+          <div class="cert-icon">⚙️</div>
+          <div>
+            <div class="cert-name">Data Engineering &amp; ETL Pipelines</div>
+            <div class="cert-issuer">QEEMA — Data Track</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── COURSES ── -->
+  <section id="courses" class="certs section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Learning</span>
+        <h2 class="section-title">Specialized <span class="gradient-text">Courses</span></h2>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card" data-delay="0">
+          <div class="cert-icon">⚙️</div>
+          <div>
+            <div class="cert-name">ETL &amp; Pipeline Engineering</div>
+            <div class="cert-issuer">QEEMA Professional Training</div>
+          </div>
+        </div>
+        <div class="cert-card" data-delay="100">
+          <div class="cert-icon">🤖</div>
+          <div>
+            <div class="cert-name">Machine Learning Fundamentals</div>
+            <div class="cert-issuer">Self-directed &amp; Professional Specialization</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">Let's build something <span class="gradient-text">extraordinary</span></h2>
+        <p class="section-sub">Have a project in mind? Or just want to say hi? Feel free to reach out!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card" id="contact-phone">
+            <div class="contact-icon">📞</div>
+            <div>
+              <span class="contact-label">Phone</span>
+              <a href="tel:+201026809007" class="contact-val">+20 102 680 9007</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-linkedin">
+            <div class="contact-icon">💼</div>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/marwan-mohammed-854b23336" target="_blank" rel="noopener noreferrer" class="contact-val">Marwan Mohamed</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-github">
+            <div class="contact-icon">💻</div>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/marwan-moahmed508" target="_blank" rel="noopener noreferrer" class="contact-val">Marwan Mohamed</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-location">
+            <div class="contact-icon">📍</div>
+            <div>
+              <span class="contact-label">Location</span>
+              <span class="contact-val">Egypt</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-name">Your Name</label>
+              <input type="text" id="cf-name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="cf-email">Email Address</label>
+              <input type="email" id="cf-email" placeholder="john@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cf-subject">Subject</label>
+            <input type="text" id="cf-subject" placeholder="Project Inquiry" />
+          </div>
+          <div class="form-group">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width" id="form-submit">Send Message ✈</button>
+          <div class="form-success" id="form-success">✅ Message sent! I'll get back to you soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">Marwan<span>.</span></span>
+      <p class="footer-copy">© 2025 Marwan Mohamed. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
