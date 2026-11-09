@@ -504,6 +504,12 @@ body {
   border-color: rgba(56,189,248,.2);
   background: rgba(56,189,248,.05);
 }
+.project-card.featured .project-img-wrapper {
+  height: 280px;
+}
+.project-card.featured .project-img-wrapper img {
+  object-position: top center;
+}
 .project-glow {
   position: absolute; width: 200px; height: 200px;
   background: radial-gradient(circle, rgba(56,189,248,.12), transparent 70%);
@@ -513,12 +519,23 @@ body {
   display: flex; align-items: center; justify-content: space-between;
   margin-bottom: 16px;
 }
+.project-badges {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
 .project-icon { font-size: 2.2rem; }
 .project-badge {
   font-size: .72rem; font-weight: 600; text-transform: uppercase;
   letter-spacing: .08em; color: var(--indigo);
   background: rgba(129,140,248,.12); border: 1px solid rgba(129,140,248,.25);
   padding: 4px 12px; border-radius: 999px;
+}
+.project-badge.test-badge {
+  color: #34d399;
+  background: rgba(16, 185, 129, 0.12);
+  border-color: rgba(16, 185, 129, 0.25);
 }
 .project-title { font-size: 1.15rem; font-weight: 700; color: #f1f5f9; margin-bottom: 10px; }
 .project-desc { 
@@ -549,6 +566,39 @@ body {
   transform: scale(1.05);
 }
 .project-tech { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+  transition: var(--transition);
+}
+.project-btn:hover {
+  background: rgba(56, 189, 248, 0.12);
+  border-color: var(--teal);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(56, 189, 248, 0.2);
+}
+.project-btn svg {
+  flex-shrink: 0;
+}
 
 /* ════════════════════════════════
    CERTIFICATIONS (inline in contact section header above)
@@ -627,6 +677,8 @@ body {
   .about-avatar-wrap { flex-direction: row; flex-wrap: wrap; justify-content: center; }
   .contact-grid { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: 1fr; }
+  .project-card.featured { grid-column: span 1; }
+  .project-card.featured .project-img-wrapper { height: 200px; }
   .about-info-grid { grid-template-columns: 1fr; }
 }
 
